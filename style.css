@@ -19,6 +19,12 @@ body{
     display: flex;
     overflow: hidden;
 }
+.credit{
+    font-size: 10px;
+    text-align: left;
+    font-family: "FinalFont";
+    margin-bottom: 10px;
+}
 
 .beginText{
     height: auto;
@@ -42,28 +48,83 @@ body{
 .signUp{
     flex: 1;
     background-color: #A9A9A9;
-    padding: 50px;
-    height: 100vh;
-    text-align: center;
-    font-size: 20px;
+    padding: 50px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    font-size: 30px;
+    box-shadow: #1c1c22 10px 10px 30px 5px;
     
 }
 .form-group-row {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     margin-bottom: 20px;
 }
 
 .form-group {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    font-family: "FinalFont";
+    font-size: 20px;
+    margin-bottom: 10px;
     text-align: left;
+}
+label {
+    margin-bottom: 8px;
+    font-size: 30px;
+    
+}
+input{
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
     font-family: "FinalFont";
 }
 
-.form-actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+input:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }
+input:valid {
+    border-color: #10B981;
+}
+#password:invalid, #confirmPassword:invalid, #email:invalid, #phone:invalid {
+    border-color: #EF4444;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: "FinalFont";
+    margin-bottom: 30px;
+    margin-top: auto;
+    text-align: left;
+}
+
+.bottom{
+    align-items: left;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+button{
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 25px;
+    font-family: "FinalFont";;
+}
+.Login{
+    font-size: 20px;
+    text-align: left;
+    font-family: "FinalFont";
+    margin-top: 20px;
+}
+    
